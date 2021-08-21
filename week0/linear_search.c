@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,x;
+    int n,x,j=0,k=1;
     scanf("%d",&n);
     int a[n];
     for(int i=0;i<n;i++)
@@ -13,12 +13,22 @@ int main()
     {
         if(a[i]==x)
         {
-            printf("present")
+            j++;
+            break;
         }
-        else 
+        else
         {
-            printf("not present")
+            k++;
         }
     }
+    if(j==1)
+    {
+        printf("present");
+    }
+    else
+    {
+        printf("not present");
+    }
+    printf("\nNo of comparisons=%d",k);
     return 0;
 }
