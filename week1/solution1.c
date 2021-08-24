@@ -26,12 +26,13 @@ int main()
         }
         if(j1==1)
         {
-        printf("present");
+        printf("Present ");
+        printf("%d",k);
         }
         else{
-            printf("not present");
+            printf("Not present %d",x);
         }
-        printf("%d",k);
+        
     }
     return 0;
 }
